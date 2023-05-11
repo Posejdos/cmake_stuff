@@ -1,4 +1,3 @@
 build/
-STM32CubeH7**/
 .vscode/
 debug*
