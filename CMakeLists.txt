@@ -20,32 +20,26 @@ set(SOURCES
 )
 
 add_compile_definitions(STM32H735xG)
-set_source_files_properties(SOURCES PROPERTIES 
-    COMPILE_FLAGS -Wall
-    COMPILE_FLAGS -Wundef
-    COMPILE_FLAGS -Wextra
-    COMPILE_FLAGS -g3
-    COMPILE_FLAGS -Os
-)
 
 # CMSIS DSP
-# add_library(DSP)
-# target_include_directories(DSP PUBLIC
-#     STM32CubeH7_V1.11.0/Drivers/CMSIS/DSP/Include
-#     STM32CubeH7_V1.11.0/Drivers/CMSIS/Core/Include
-# )
+add_library(DSP)
+target_include_directories(DSP PUBLIC
+    STM32CubeH7_V1.11.0/Drivers/CMSIS/DSP/Include
+    STM32CubeH7_V1.11.0/Drivers/CMSIS/Core/Include
+)
 
-# file(GLOB_RECURSE DSP_SRC 
-#     STM32CubeH7_V1.11.0/Drivers/CMSIS/DSP/Source/*.c)
+file(GLOB_RECURSE DSP_SRC 
+    STM32CubeH7_V1.11.0/Drivers/CMSIS/DSP/Source/*.c
+)
 
-# target_sources(DSP PRIVATE
-#     ${DSP_SRC}
-# )
+target_sources(DSP PRIVATE
+    ${DSP_SRC}
+)
 
-# target_compile_options(DSP INTERFACE
-#     -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=hard
-#     -ffunction-sections -fdata-sections -Os
-# )
+target_compile_options(DSP INTERFACE
+    -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=hard
+    -ffunction-sections -fdata-sections -Os
+)
 # /CMSIS DSP
 
 # CODEC2 #
@@ -74,9 +68,11 @@ target_link_libraries(STPhone
     CMSIS::STM32::H735xx::M7
     STM32::NoSys
 
-    # DSP
+    DSP
 
     codec2
+
+    m
 )
 
 stm32_generate_binary_file(STPhone)
