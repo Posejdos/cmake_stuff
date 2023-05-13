@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC -g -O2 -DDUMP CMakeFiles/freedv_700d_rx.dir/freedv_700d_rx.c.o -o freedv_700d_rx  -Wl,-rpath,/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/src ../src/libcodec2.so.1.1 -lm 

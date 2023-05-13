@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi  -Wall -Wno-strict-overflow -std=gnu11 -g -O2 -DDUMP CMakeFiles/fmfsk_demod.dir/fmfsk_demod.c.obj CMakeFiles/fmfsk_demod.dir/modem_probe.c.obj CMakeFiles/fmfsk_demod.dir/octave.c.obj -o fmfsk_demod.elf  libcodec2.a 

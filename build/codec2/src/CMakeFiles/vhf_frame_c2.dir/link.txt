@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi  -Wall -Wno-strict-overflow -std=gnu11 -g -O2 -DDUMP CMakeFiles/vhf_frame_c2.dir/vhf_frame_c2.c.obj -o vhf_frame_c2.elf  libcodec2.a 

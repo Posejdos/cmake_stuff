@@ -1,0 +1,306 @@
+Determining if the floor exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a61e6/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_a61e6.dir/build.make CMakeFiles/cmTC_a61e6.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a61e6.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_a61e6.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a61e6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a61e6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_a61e6.dir/CheckSymbolExists.c.o -o cmTC_a61e6 
+/usr/bin/ld: CMakeFiles/cmTC_a61e6.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `floor'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_a61e6.dir/build.make:99: cmTC_a61e6] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_a61e6/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef floor
+  return ((int*)(&floor))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ceil exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5afa4/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5afa4.dir/build.make CMakeFiles/cmTC_5afa4.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5afa4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_5afa4.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5afa4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5afa4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_5afa4.dir/CheckSymbolExists.c.o -o cmTC_5afa4 
+/usr/bin/ld: CMakeFiles/cmTC_5afa4.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `ceil'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_5afa4.dir/build.make:99: cmTC_5afa4] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_5afa4/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ceil
+  return ((int*)(&ceil))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the pow exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3eed2/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3eed2.dir/build.make CMakeFiles/cmTC_3eed2.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3eed2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_3eed2.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3eed2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3eed2.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_3eed2.dir/CheckSymbolExists.c.o -o cmTC_3eed2 
+/usr/bin/ld: CMakeFiles/cmTC_3eed2.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_3eed2.dir/build.make:99: cmTC_3eed2] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_3eed2/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pow
+  return ((int*)(&pow))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sqrt exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b78ff/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b78ff.dir/build.make CMakeFiles/cmTC_b78ff.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b78ff.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_b78ff.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b78ff
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b78ff.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_b78ff.dir/CheckSymbolExists.c.o -o cmTC_b78ff 
+/usr/bin/ld: CMakeFiles/cmTC_b78ff.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_b78ff.dir/build.make:99: cmTC_b78ff] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_b78ff/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sqrt
+  return ((int*)(&sqrt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sin exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fe28e/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_fe28e.dir/build.make CMakeFiles/cmTC_fe28e.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe28e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_fe28e.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fe28e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe28e.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_fe28e.dir/CheckSymbolExists.c.o -o cmTC_fe28e 
+/usr/bin/ld: CMakeFiles/cmTC_fe28e.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `sin'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_fe28e.dir/build.make:99: cmTC_fe28e] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_fe28e/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sin
+  return ((int*)(&sin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the cos exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2a771/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2a771.dir/build.make CMakeFiles/cmTC_2a771.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a771.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_2a771.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2a771
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a771.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_2a771.dir/CheckSymbolExists.c.o -o cmTC_2a771 
+/usr/bin/ld: CMakeFiles/cmTC_2a771.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `cos'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_2a771.dir/build.make:99: cmTC_2a771] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_2a771/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef cos
+  return ((int*)(&cos))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the atan2 exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5fa96/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5fa96.dir/build.make CMakeFiles/cmTC_5fa96.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5fa96.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_5fa96.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5fa96
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fa96.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_5fa96.dir/CheckSymbolExists.c.o -o cmTC_5fa96 
+/usr/bin/ld: CMakeFiles/cmTC_5fa96.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `atan2'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_5fa96.dir/build.make:99: cmTC_5fa96] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_5fa96/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atan2
+  return ((int*)(&atan2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the log10 exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_06ff7/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_06ff7.dir/build.make CMakeFiles/cmTC_06ff7.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06ff7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_06ff7.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_06ff7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06ff7.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_06ff7.dir/CheckSymbolExists.c.o -o cmTC_06ff7 
+/usr/bin/ld: CMakeFiles/cmTC_06ff7.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_06ff7.dir/build.make:99: cmTC_06ff7] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_06ff7/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log10
+  return ((int*)(&log10))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the round exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_18c19/fast && gmake[3]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_18c19.dir/build.make CMakeFiles/cmTC_18c19.dir/build
+gmake[4]: Entering directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18c19.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-strict-overflow -std=gnu11 -fPIC  -o CMakeFiles/cmTC_18c19.dir/CheckSymbolExists.c.o -c /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_18c19
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18c19.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC  CMakeFiles/cmTC_18c19.dir/CheckSymbolExists.c.o -o cmTC_18c19 
+/usr/bin/ld: CMakeFiles/cmTC_18c19.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `round'
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_18c19.dir/build.make:99: cmTC_18c19] Error 1
+gmake[4]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_18c19/fast] Error 2
+gmake[3]: Leaving directory '/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp'
+
+
+File /home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef round
+  return ((int*)(&round))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

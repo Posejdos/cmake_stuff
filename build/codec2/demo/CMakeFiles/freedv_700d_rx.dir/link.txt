@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi  -Wall -Wno-strict-overflow -std=gnu11 -g -O2 -DDUMP CMakeFiles/freedv_700d_rx.dir/freedv_700d_rx.c.obj -o freedv_700d_rx.elf  ../src/libcodec2.a 

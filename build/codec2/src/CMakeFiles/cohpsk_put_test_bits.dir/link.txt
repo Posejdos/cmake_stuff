@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi  -Wall -Wno-strict-overflow -std=gnu11 -g -O2 -DDUMP CMakeFiles/cohpsk_put_test_bits.dir/cohpsk_put_test_bits.c.obj CMakeFiles/cohpsk_put_test_bits.dir/octave.c.obj -o cohpsk_put_test_bits.elf  libcodec2.a 

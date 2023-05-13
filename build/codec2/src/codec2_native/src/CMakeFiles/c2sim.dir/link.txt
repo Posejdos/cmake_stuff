@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wno-strict-overflow -std=gnu11 -fPIC -g -O2 -DDUMP CMakeFiles/c2sim.dir/c2sim.c.o CMakeFiles/c2sim.dir/sd.c.o -o c2sim  -Wl,-rpath,/home/marcin/projects/cmake_testing/build/codec2/src/codec2_native/src libcodec2.so.1.1 -lm 

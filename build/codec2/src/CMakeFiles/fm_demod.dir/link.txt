@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi  -Wall -Wno-strict-overflow -std=gnu11 -g -O2 -DDUMP CMakeFiles/fm_demod.dir/fm_demod.c.obj CMakeFiles/fm_demod.dir/fm.c.obj -o fm_demod.elf  -lm 

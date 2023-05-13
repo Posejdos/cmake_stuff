@@ -1,0 +1,72 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/arm-none-eabi-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+/build/newlib-pB30de/newlib-3.3.0/build/arm-none-eabi/newlib/libc/stdlib/../../../../../newlib/libc/stdlib/exit.c:64: undefined reference to `_exit'
+collect2: error: ld returned 1 exit status
+
+
+Determining if the __GNU_LIBRARY__ exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5b202/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5b202.dir/build.make CMakeFiles/cmTC_5b202.dir/build
+gmake[1]: Entering directory '/home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b202.dir/CheckSymbolExists.c.obj
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi   -Wall -Wno-strict-overflow -std=gnu11  -o CMakeFiles/cmTC_5b202.dir/CheckSymbolExists.c.obj -c /home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: features.h: No such file or directory
+    2 | #include <features.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_5b202.dir/build.make:78: CMakeFiles/cmTC_5b202.dir/CheckSymbolExists.c.obj] Error 1
+gmake[1]: Leaving directory '/home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5b202/fast] Error 2
+
+
+File /home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <features.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GNU_LIBRARY__
+  return ((int*)(&__GNU_LIBRARY__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _GNU_SOURCE exist failed with the following output:
+Change Dir: /home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_22a2a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_22a2a.dir/build.make CMakeFiles/cmTC_22a2a.dir/build
+gmake[1]: Entering directory '/home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22a2a.dir/CheckSymbolExists.c.obj
+/usr/bin/arm-none-eabi-gcc --sysroot=/usr/arm-none-eabi   -Wall -Wno-strict-overflow -std=gnu11  -o CMakeFiles/cmTC_22a2a.dir/CheckSymbolExists.c.obj -c /home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: features.h: No such file or directory
+    2 | #include <features.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_22a2a.dir/build.make:78: CMakeFiles/cmTC_22a2a.dir/CheckSymbolExists.c.obj] Error 1
+gmake[1]: Leaving directory '/home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_22a2a/fast] Error 2
+
+
+File /home/marcin/projects/cmake_testing/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <features.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _GNU_SOURCE
+  return ((int*)(&_GNU_SOURCE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
